@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Blockchain: Chaining-the-blocks
+title: Blockchain - Chaining-the-blocks
 date: 2017-12-08 14:50
 author: burhaan
 comments: true
 categories: [blockchain, Uncategorized]
 ---
+
 Leading on from <a href="http://burhaantargett.tech/2017/11/30/a-foray-into-the-chain-of-blocks-the-human-element/"><b>my previous post</b></a>, no blockchain topic would be complete without the obligatory explanation of how blockchain works at a high-level.
 
 I say high-level because the intricacies of how things like consensus algorithms work, how they address Byzantine Fault Tolerance (BFT), how nodes 'speak' to each other, what the purpose of a nonce is, etc. will come later in my journey.
@@ -34,11 +35,12 @@ We now have an abstracted understanding of the topology of the network - great. 
 
 And that's the same as a blockchain ledger:
 
-Assume we have a deposit of $100 , this is recorded in our ledger and looks like this
+Assume we have a deposit of \$100 , this is recorded in our ledger and looks like this
 
 <a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-1.png"><img class="size-medium wp-image-342 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-1-300x39.png" alt="" width="300" height="39" /></a>
 
 We then continue to append more transactions
+
 <ul>
  	<li>A deposit of $125</li>
  	<li>A withdrawal of $200; and</li>
