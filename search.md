@@ -6,8 +6,6 @@ css: '/css/search.css'
 
 ## Search
 
-### Using the Google
-
 <div class="google-custom-search">
 
 <script>
