@@ -6,6 +6,7 @@ author: burhaan
 comments: true
 categories: [blockchain, Uncategorized]
 ---
+
 When I started writing this post, the first thing I did was start diving into the different, and most common, consensus algorithms. Sometime during my first paragraph, it occurred to me that I may be taking for granted that anyone actually understands, fundamentally, what that even means. Perhaps I've got it wrong too. So lets start at the beginning...
 
 <strong>What is an algorithm.</strong>
@@ -22,13 +23,14 @@ We now know that a <b>consensus algorithm </b>is a set of steps that are followe
 
 Alright, but what are these <b>consensus algorithms</b> agreeing to?
 
-They need to agree whether a block should be added to the blockchain. If you're not sure what that is, take a look at <a href="http://burhaantargett.tech/2017/12/08/blockchain-chaining-the-blocks/">my previous post</a>.
+They need to agree whether a block should be added to the blockchain. If you're not sure what that is, take a look at <a href="/2017-12-08-blockchain-chaining-the-blocks/">my previous post</a>.
 
 With regard to blockchain, various technologies use different algorithms to arrive at this outcome. This post will cover the most popular ones.
 
 Alright, <b>so why should you care?</b> As long as it works, does it really matter? If smarter people say it's okay, it must be okay! So set it up, run it and Bob's your uncle.
 
 Not quite. There are many factors to consider when looking at consensus algorithms, some of them are:
+
 <ul>
  	<li>Algorithms may be unreliable or fault intolerant and may crash under some circumstances - see  <a href="https://en.wikipedia.org/wiki/Byzantine_fault_tolerance">byzantine fault tolerance</a>.</li>
  	<li>They may take a really long time to process - not great if you're expecting something to be done in 5 minutes but it takes 5 months.</li>
@@ -141,6 +143,7 @@ At this stage, I need to draw a line - It's easy to disappear down a rabbit hole
 &nbsp;
 
 So what some of the considerations you can use to whittle down the options available to you:
+
 <ul>
  	<li><b>Throughput</b> - How many transactions need to be processed within a timeframe.</li>
  	<li><b>Cost</b> - Both in terms of implementation and transaction costs.</li>
