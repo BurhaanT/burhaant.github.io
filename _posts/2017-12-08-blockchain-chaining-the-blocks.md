@@ -7,7 +7,7 @@ comments: true
 categories: [blockchain, Uncategorized]
 ---
 
-Leading on from <a href="http://burhaantargett.tech/2017/11/30/a-foray-into-the-chain-of-blocks-the-human-element/"><b>my previous post</b></a>, no blockchain topic would be complete without the obligatory explanation of how blockchain works at a high-level.
+Leading on from <a href="/2017-11-30-a-foray-into-the-chain-of-blocks-the-human-element/"><b>my previous post</b></a>, no blockchain topic would be complete without the obligatory explanation of how blockchain works at a high-level.
 
 I say high-level because the intricacies of how things like consensus algorithms work, how they address Byzantine Fault Tolerance (BFT), how nodes 'speak' to each other, what the purpose of a nonce is, etc. will come later in my journey.
 
