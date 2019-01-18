@@ -19,13 +19,13 @@ One of the fundamental concepts when talking about blockchain is that of a distr
 
 The difference is probably best described by the image below.
 
-<b><a href="http://burhaantargett.tech/wp-content/uploads/2017/12/network-differences.jpg"><img class="wp-image-340 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/network-differences-300x173.jpg" alt="" width="505" height="291" /></a></b>
+<b><a href="/img/content/network-differences.jpg"><img class="wp-image-340 aligncenter" src="/img/content/network-differences-300x173.jpg" alt="" width="505" height="291" /></a></b>
 
 As you can see, centralised is, as the name implies, where a single node controls the entire network. A failure at this node would incapacitate the entire network.
 
 In a decentralised network, there is a greater degree of redundancy and fault tolerance however, faults at critical nodes would cripple substantial parts of the network and, potentially, orphan nodes.
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/network-failure.png"><img class="wp-image-341 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/network-failure-300x173.png" alt="" width="472" height="272" /></a>
+<a href="/img/content/network-failure.png"><img class="wp-image-341 aligncenter" src="/img/content/network-failure-300x173.png" alt="" width="472" height="272" /></a>
 
 Blockchain's resilience comes from the underlying implementation of a distributed architecture. In this topology, a node is able to operate as a discrete unit. Each node has it's own copy of the ledger and is not dependant on any other node(s) on the network.  A failure at a node would only affect that node and no other portion of the network.
 
@@ -37,7 +37,7 @@ And that's the same as a blockchain ledger:
 
 Assume we have a deposit of \$100 , this is recorded in our ledger and looks like this
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-1.png"><img class="size-medium wp-image-342 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-1-300x39.png" alt="" width="300" height="39" /></a>
+<a href="/img/content/transaction-1.png"><img class="size-medium wp-image-342 aligncenter" src="/img/content/transaction-1-300x39.png" alt="" width="300" height="39" /></a>
 
 We then continue to append more transactions
 
@@ -48,17 +48,17 @@ We then continue to append more transactions
 </ul>
 Eventually, our ledger look like this
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-2.png"><img class="size-medium wp-image-346 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-2-300x185.png" alt="" width="300" height="185" /></a>
+<a href="/img/content/transactions-2.png"><img class="size-medium wp-image-346 aligncenter" src="/img/content/transactions-2-300x185.png" alt="" width="300" height="185" /></a>
 
 In a blockchain implementation (usually after an amount of time), all these transactions are grouped together into a block and the transactions are 'hashed'. Think of a hash as a fingerprint that uniquely identifies some data. Any change in the data (no matter how small) will dramatically affect what the hash looks like. So our hash uniquely identifies our block of transaction any may look like this
 
-<b><a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-hashed.png"><img class="size-medium wp-image-348 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-hashed-300x231.png" alt="" width="300" height="231" /></a></b>
+<b><a href="/img/content/transactions-hashed.png"><img class="size-medium wp-image-348 aligncenter" src="/img/content/transactions-hashed-300x231.png" alt="" width="300" height="231" /></a></b>
 
 That hash then becomes an entry in the next block of transactions and this value is taken into account when generating a hash for that block. To understand this better, take a look at the illustration below.
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-2-block.png"><img class="wp-image-347 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-2-block-300x160.png" alt="" width="454" height="242" /></a>This process continues on with each blocks hash becoming the 'seed' for the next block and we end up with something looking like this
+<a href="/img/content/transactions-2-block.png"><img class="wp-image-347 aligncenter" src="/img/content/transactions-2-block-300x160.png" alt="" width="454" height="242" /></a>This process continues on with each blocks hash becoming the 'seed' for the next block and we end up with something looking like this
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-multiple-blocks.png"><img class="wp-image-349 aligncenter" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transactions-multiple-blocks-300x197.png" alt="" width="480" height="316" /></a>
+<a href="/img/content/transactions-multiple-blocks.png"><img class="wp-image-349 aligncenter" src="/img/content/transactions-multiple-blocks-300x197.png" alt="" width="480" height="316" /></a>
 
 We end up with a chain of blocks - hence the term 'block-chain'.
 
@@ -66,11 +66,11 @@ You may be wondering what the point of this is. Well, lets take a look:
 
 Imagine, if we tried altering a transaction somewhere within our chain
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-alter.png"><img class="alignnone wp-image-343" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-alter-300x197.png" alt="" width="458" height="301" /></a>
+<a href="/img/content/transaction-alter.png"><img class="alignnone wp-image-343" src="/img/content/transaction-alter-300x197.png" alt="" width="458" height="301" /></a>
 
 The hash for that block, now, would not match the original hash for that block. Further, because that hash is used as the seed for subsequent blocks, none of the subsequent blocks would be correct.
 
-<a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-block-invalidate.png"><img class="alignnone wp-image-344" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-block-invalidate-300x197.png" alt="" width="463" height="304" /></a>
+<a href="/img/content/transaction-block-invalidate.png"><img class="alignnone wp-image-344" src="/img/content/transaction-block-invalidate-300x197.png" alt="" width="463" height="304" /></a>
 
 If a transaction was to be altered, not only would that blocks hash need to be altered but, also, every subsequent block.
 
@@ -78,7 +78,7 @@ Computationally, that's a very difficult task.
 
 However, that's not all that lends immutability to a blockchain. Not only would you have to alter every block on that ledger, you would need to alter that ledger on every node in the network.
 
-<b><a href="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-node-network.png"><img class="alignnone wp-image-345" src="http://burhaantargett.tech/wp-content/uploads/2017/12/transaction-node-network-300x174.png" alt="" width="631" height="366" /></a></b>
+<b><a href="/img/content/transaction-node-network.png"><img class="alignnone wp-image-345" src="/img/content/transaction-node-network-300x174.png" alt="" width="631" height="366" /></a></b>
 
 This is the incorruptible aspect of blockchain and this is what gives us certainty that what we see is really what transpired. Furthermore, the details of these transactions (in a public, unpermissioned, blockchain implementation) are transparent.
 
