@@ -6,7 +6,8 @@ author: burhaan
 comments: true
 categories: [Uncategorized]
 ---
-<a href="http://burhaantargett.co.za/wp-content/uploads/2014/10/api-manager-logo.png"><img class="size-full wp-image-14 aligncenter" src="http://burhaantargett.co.za/wp-content/uploads/2014/10/api-manager-logo.png" alt="api-manager-logo" width="249" height="44" /></a>
+
+<a href="/img/content/api-manager-logo.png"><img class="size-full wp-image-14 aligncenter" src="/img/content/api-manager-logo.png" alt="api-manager-logo" width="249" height="44" /></a>
 
 &nbsp;
 
@@ -22,13 +23,13 @@ Anyway, here's the steps, simply:
 2. Install unzip ( sudo apt-get install unzip )
 3. Unzip that file to some directory (e.g. /wso2)
 4. Install Java using the following commands:
-- sudo apt-get install python-software-properties
-- sudo add-apt-repository ppa:webupd8team/java
-- sudo apt-get update
-- sudo apt-get install oracle-java8-installer
-5. Check Java version is installed correctly: java -version
-6. Set environment variables:
-- export JAVA_HOME=/usr
-- export PATH=${JAVA_HOME}/bin:${PATH}
-7. In the bin folder of wherever WSO2 was extracted, run ./wso2server.sh
-<p class="p1">Note, that when logging in for the first time it is recommended to change the admin password, but if you do, You have to modify the <b>AuthManager</b> section in the api-manager.xml with the new admin password.</p>
+   - sudo apt-get install python-software-properties
+   - sudo add-apt-repository ppa:webupd8team/java
+   - sudo apt-get update
+   - sudo apt-get install oracle-java8-installer
+   5. Check Java version is installed correctly: java -version
+   6. Set environment variables:
+   - export JAVA_HOME=/usr
+   - export PATH=${JAVA_HOME}/bin:${PATH}
+   7. In the bin folder of wherever WSO2 was extracted, run ./wso2server.sh
+   <p class="p1">Note, that when logging in for the first time it is recommended to change the admin password, but if you do, You have to modify the <b>AuthManager</b> section in the api-manager.xml with the new admin password.</p>
