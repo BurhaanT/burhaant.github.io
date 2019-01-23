@@ -17,12 +17,25 @@ However, having a service that does the heavy lifting for me is alluring. When I
 
 So, on to it. Hopefully, my learnings can make your life a little easier and I can save you the effort of trawling through all the documents and videos out there to get you up and running as quickly as possible.
 
+**Azure Active Directory vs. Microsoft Identity Platform**
+My research starts here with "What is Azure Active Directory?", and almost the first paragraph on Microsoft docs brings up Microsoft Identity Platform (aka. Azure Active Directory for Developers). 
+
+"Sheesh!" you say. "I've only just started and it's changed already!" (I hear ya!...)
+
+Let's break it down a little so I understand, in simple terms what the difference is any why I'd care. Probably the best place to start is with their intended purpose:
+
+### Azure Active Directory ###
+
+
+### Azure Active Directory for Developers ###
+
 The Basics
 ======
 
 ## What is Azure Active Directory in a nutshell ##
 
 The first thing you'll want to do, before you go any further is skim over some of the terminology related to AAD - take a look through [this table](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#terminology){:target="_blank"}
+
 
 
 Additional Resources
