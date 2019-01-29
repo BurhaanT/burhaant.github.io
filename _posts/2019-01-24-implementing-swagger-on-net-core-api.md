@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Implementating Swagger on .NET Core WebAPI using Swashbuckle
+title: Implementing Swagger on .NET Core WebAPI using Swashbuckle
 date: 2019-01-24 09:24
 author: burhaan
 comments: true
