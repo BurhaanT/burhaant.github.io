@@ -7,10 +7,11 @@ comments: true
 categories: [API, Swagger, Swashbuckle, .NET Core]
 ---
 
-I quite like starting at the basics, and this entails the what's and why's of a particular technology as this helps me set the context and understand when to use a particular technology.
-I'm not going to rewrite the prethora on information that relates to swagger and swashbuckle but below, you'll find useful links that will help answer these questions.
+I quite like starting at the basics, and this entails the what's and why's of a particular technology as this helps me set the context and understand when to use it.
 
-That being said, I'd like to summarise a few things...
+I'm not going to rewrite the prethora of information that relates to Swagger and Swashbuckle but below, you'll find useful links that will help answer these questions.
+
+That being said, I'd like to summarise a few things and continue by getting Swagger working on a project...
 
 ## What is Swagger?
 
@@ -19,17 +20,18 @@ In simple terms, Swagger is a specification that describes the functionality pro
 - What operations are supported by the API
 - What parameters are available
 - What's returned by the endpoints
-- Whether authorisation is required / or not.
+- Whether authorisation is required / or not
 - Licensing and contact information
 
-There are a number of approaches to adding this to your API.
+There are a number of approaches for adding this to your API.
 
 - **Design first:** This works by designing your API endpoints using the Swagger Editor and then using [Swagger Codegen](https://swagger.io/tools/swagger-codegen/){:target="\_blank"} to generate the relevant code. It won't codegen the actual functionality but you will end up with a skeleton that can be built upon.
 - **Code first:** That is, write your code and apply the relevant attributes, associated middleware, etc. **_This is the approach this post will focus on_**
 
 ## Why would I want to use Swagger?
 
-To answer this question, we need to consider the purpose of and API first.
+To answer this question, we need to consider the purpose of an API:
+
 In most cases, an API is does not operate in isolation. It needs to connect to other applications or interfaces. In many cases, the developer(s) that consume an API are not the same developers that write the API and where it is, that developer is unlikely to remeber every operation and how the endpoints were intended to be consumed and/or what the endpoint actually does.
 
 In a nusthell, API's are intended to be used by something or someone else.
@@ -53,6 +55,7 @@ When I run the application and navigate to `https://localhost:<port>/api/values`
 ### Adding Swagger to my API
 
 For my .NET API I'm going to use Swashbuckle.
+
 _Swashbuckle is a library that my application will use to generate the Swagger specification for my application. Also, the swagger UI is contained within this library so I get a pleasant UI as part of the deal._
 
 In the the terminal for my project (by the way, I'm using VS Code for all this), I run `dotnet add package Swashbuckle.AspNetCore'
@@ -77,7 +80,7 @@ Finally, in `Startup.Configure`, enable the middleware which will generate the J
 
 ```
 
-if you now navigate to `https://localhost:<port>/swagger` you now end up with a pretty UI and are able to interact with you API endpoints.
+If you now navigate to `https://localhost:<port>/swagger` you now end up with a pretty UI and are able to interact with you API endpoints.
 
 Any there it is.
 
