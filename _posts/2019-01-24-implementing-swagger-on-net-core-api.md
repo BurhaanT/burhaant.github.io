@@ -78,7 +78,9 @@ if you now navigate to `https://localhost:<port>/swagger` you now end up with a 
 
 Any there it is.
 
-![SwaggerUI](/img/content.swagger-ui.png)
+![SwaggerUI](/img/content/swagger-ui.png)
+
+In the next post I'll cover how to add attributes to API endpoints so they appear in the Swagger documentation as well as additional, nifty, features.
 
 ### Aditional Resources
 
