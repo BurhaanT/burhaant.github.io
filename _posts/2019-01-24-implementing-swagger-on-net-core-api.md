@@ -36,9 +36,12 @@ In a nusthell, API's are intended to be used by something or someone else.
 This effort becomes difficult when the consumer doesn't know _how_ to use it as intended - enter API documentation. Clear, up-to-date documentation makes integration tasks like this simpler and faster.
 
 Enter [Swagger](https://swagger.io/){:target="\_blank"}...
+
 ["Swagger is a framework for describing your API using a common language that everyone can understand."](https://blog.readme.io/what-is-swagger-and-why-it-matters/){:target="\_blank"}
 
 ## Implementing Swagger on an .NET Core API
+
+The full source for this post can be found [here](https://github.com/BurhaanT/spike-swagger){:target="\_blank"}
 
 As mentioned previously, this post will focus on the code-first approach of API design. Here we go.
 
