@@ -27,9 +27,10 @@
   />
 
   {% include gtag.html %} {% include gtm_head.html %} {% include
-  google_analytics.html %} {% if layout.common-ext-css %} {% for css in
-  layout.common-ext-css %} {% include ext-css.html css=css %} {% endfor %} {%
-  endif %} {% if layout.common-css %} {% for css in layout.common-css %}
+  google_analytics.html %} {% include google_adsense.html %} {% if
+  layout.common-ext-css %} {% for css in layout.common-ext-css %} {% include
+  ext-css.html css=css %} {% endfor %} {% endif %} {% if layout.common-css %} {%
+  for css in layout.common-css %}
   <link
     rel="stylesheet"
     href="{{ css | prepend: site.baseurl | replace: '//', '/' }}"
@@ -120,18 +121,9 @@
   {% endif %} {% if site.matomo %} {% include matomo.html %} {% endif %} {% if
   page.comments and site.staticman.repository and site.staticman.branch %}
   <!-- Staticman -->
-  <link rel="stylesheet" href="{{
-    '/css/staticman.css' | prepend: site.baseurl
-  }}" /> {% endif %}
-
-  <script
-    async
-    src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-  ></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: 'ca-pub-5295601958521502',
-      enable_page_level_ads: true
-    });
-  </script>
+  <link
+    rel="stylesheet"
+    href="{{ '/css/staticman.css' | prepend: site.baseurl }}"
+  />
+  {% endif %}
 </head>

@@ -106,6 +106,9 @@ share-links-active:
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: 'UA-110579409-1'
 
+# Fill in Google AdSense Id here
+google_adsense_client_id: 'ca-pub-5295601958521502'
+
 # Google Tag Manager ID
 #gtm: ""
 
