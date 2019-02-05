@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Azure Active Directory to Provide Authentication for an API (Part 1)
-date: 2019-01-21 10:04
+date: 2019-02-05 10:04
 author: burhaan
 comments: true
 categories: [Azure]
