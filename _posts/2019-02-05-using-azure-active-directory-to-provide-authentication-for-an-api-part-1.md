@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Introduction to Azure Active Directory (AAD)
+title: Using Azure Active Directory to Provide Authentication for an API (Part 1)
 date: 2019-01-21 10:04
 author: burhaan
 comments: true
@@ -11,7 +11,7 @@ I've been creating applications for a long time and more often than not, there's
 This ranges from data in transit to data at rest as well as relevant authorisation.
 In most cases, this functionality has been provided out the box and when it came to authentication, anything more than the implementation of a simple membership provider has been someone else's issue.
 
-I've done a bit of playing around with Azure Active Directory (AAD) but nothing significant enough for me to classify it as a skill. In other words, most of the time I'd be guessing...
+I've done a bit of playing around with **Azure Active Directory (AAD)** but nothing significant enough for me to classify it as a skill. In other words, most of the time I'd be guessing...
 
 However, having a service that does the heavy lifting for me is alluring. When I start thinking about multifactor authentication, oAuth and oAuth Delegation, policies (and the list goes on), it just seems the AAD is an easier option. When you've been trying to get an application out the door as quickly as possible and with least amount of effort while maintaining it's integrity, easy (and battle tested) is good.
 
@@ -28,7 +28,7 @@ Keep calm and carry on! This seems to be nothing more than marketing that's mean
 
 Moving on...
 
-## What is Azure Active Directory in a nutshell
+## What is Azure Active Directory in a Nutshell
 
 The first thing you'll want to do, before you go any further is skim over some of the terminology related to AAD - take a look through [this table](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#terminology){:target="\_blank"}
 
@@ -81,12 +81,61 @@ Registering your application (Postman in this case) is a simple process:
 
 ![Azure AD Registration Steps](/img/content/AzureAD-App-Registration-Steps.png)
 
-## Setting up a Web API Project
+When adding the application in our case, **note** that you must select `Web app / API` and NOT `Native`. The reason for this is because of security concerns for public clients and the keys property was removed for native applications - See more details [here](https://social.msdn.microsoft.com/Forums/en-US/271c4a49-362c-4b6a-99ee-a4cd13d6c5b2/app-registration-does-not-have-keys-option-available?forum=WindowsAzureAD){:target="\_blank"}
 
-I want to get an API project up and running quickly so I'll run `dotnet new webapi`. This gives me a base from which to start. Done and dusted...ready to go!
+4. Complete the application details - the `Sign-on URL` when creating the application can be `http://localhost`.
 
-## Authenticating an API
+At this stage, lets records some details that we'll need when calling AAD using postman:
+
+- **Tenant ID:** `Azure Active Directory` > `Properties` > `Directory ID`
+- **Client ID:** `Azure Active Directory` > `App registrations` > _your app_ > `Application ID`
+- **Client Secret:** `Azure Active Directory` > `App registrations` > _your app_ > `Settings` > `Keys` > _Create a new key that never expires and copy the value_
+
+### Testing Postman
+
+_If you don't want to follow the steps below, you can execute the request by using the request I've created [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ff8c9dcc5a9be4ed984c){:target="\_blank"}_
+
+Having recorded the values in last step above, open Postman and create an environment for your project.  
+Create the following variables in your environment and populate them with the details you've recorded (if you're not sure how to do that, see [this](https://learning.getpostman.com/docs/postman/environments_and_globals/manage_environments/){:target="\_blank"})
+
+- clientID
+- clientSecret
+- tenantID
+
+Now, create a new `POST` request to `https://login.microsoftonline.com/{{tenantId}}/oauth2/token`
+
+Under each of the following tabs, ensure the values are as indicated.
+
+**Authorization**  
+Type: OAuth 2.0  
+Add authorization data to: Request Header
+
+**Body**  
+Ensure `x-www-form-urlencoded` is selected then set the following key/values
+
+- grant_type : client_credentials
+- client_id: {{clientId}}
+- client_secret: {{clientSecret}}
+- resource: https://management.azure.com
+
+**Headers**  
+Set the following key/value header
+
+- Content-Type: application/x-www-form-urlencoded
+
+**Tests**  
+Finally, we'll want to record the Token value somewhere. Copy the following into the code window
+
+`var json = JSON.parse(responseBody);`  
+`postman.setEnvironmentVariable("bearerToken", json.access_token);`
+
+Now, if you hit **SEND**, you should receive an access token back!
+
+![Postman access token](/img/content/Postman-access-token.PNG)
+
+This post is continued in Part 2 (...coming soon....)
 
 ### Additional Resources
 
-If you're looking for specific developer tutorials, take a look at [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/index){:target="\_blank"}
+- If you're looking for specific developer tutorials, take a look at [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/index){:target="\_blank"}
+- A really simple tutorial on [setting up Postman to use Azure Active Directory](https://blog.jongallant.com/2017/03/azure-active-directory-access-tokens-postman/){:target="\_blank"}
