@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An introduction to Azure Active Directory (AAD)
+title: An Introduction to Azure Active Directory (AAD)
 date: 2019-01-21 10:04
 author: burhaan
 comments: true
@@ -17,7 +17,7 @@ However, having a service that does the heavy lifting for me is alluring. When I
 
 So, on to it. Hopefully, my learnings can make your life a little easier and I can save you the effort of trawling through all the documents and videos out there to get you up and running as quickly as possible.
 
-**Azure Active Directory vs. Microsoft Identity Platform**
+**Azure Active Directory vs. Microsoft Identity Platform**  
 I start with "What is Azure Active Directory?", and almost the first paragraph on Microsoft docs brings up [Microsoft Identity Platform (aka. Azure Active Directory for Developers)](https://docs.microsoft.com/en-us/azure/active-directory/develop/index){:target="\_blank"}.
 
 "Sheesh!" you say. "I've only just started and it's changed already!" (I hear ya!...)
@@ -54,28 +54,29 @@ As such, my purpose is to create a simple API that requires Authentication. I'd 
 
 ## Setting up an AAD Tenant
 
-Before we even get going, I need to ensure I have an AAD tenant that I can work against (wondering what this is? - Take a look at the aforementioned table ;) ).
+Before we even get going, I need to ensure I have an AAD tenant that I can work against (wondering what this is? - Take a look at the aforementioned table ;) ).  
 Then, follow the [steps here](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant){:target="\_blank"} to setup the tenant.
 
 I've setup my tenant with the following details:
-`Organisation: burhaantargett`
 
+`Organisation: burhaantargett`  
 `Initial domain name: burhaantargett.onmicrosoft.com`
 
 ## Testing out Azure Active Directory Authentication using Postman
 
 Following the instructions on setting up AAD is a simple process. However, before moving on I'd like to make sure that everything so far works as expected so I dont (later) start hunting down phantom authentication errors in code.
-As such, at this stage I want to test, independant of code, and [Postman](https://www.getpostman.com/){:target="\_blank"} is a useful otion.
+As such, at this stage I want to test, independant of code, and [Postman](https://www.getpostman.com/){:target="\_blank"} is a useful otion.  
 All I want to do at this stage it successfully make a call to AAD with a username and password and receive a token back.
 
 ### Registering Postman
 
-For any application to be able to communicate with AAD, it needs to be registered. _Why do application need to be registered you ask? Take a read of [this]_(https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-how-applications-are-added#why-do-applications-integrate-with-azure-ad){:target="\_blank"}
+For any application to be able to communicate with AAD, it needs to be registered.  
+_Why do application need to be registered you ask? Take a read of [this](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-how-applications-are-added#why-do-applications-integrate-with-azure-ad){:target="\_blank"}_
 
 Registering your application (Postman in this case) is a simple process:
 
 1. Navigate to `Azue Active Directory` within the Azure Portal
-2. Click on `App Registrations`
+2. Click on `App registrations`
 3. Click on `New application registration`
 
 ![Azure AD Registration Steps](/img/content/AzureAD-App-Registration-Steps.png)
