@@ -47,11 +47,6 @@ I'm sure other cloud providers are equally as capable but I am more familiar wit
 
 I need to specifically mention [Yaser's blog](https://mehraban.com.au){:taget="\_blank"} here - An excellent resource and I've probably used it a few times when I've got stuck. In particular, he's got a great post on [using Azure B2C as your identity manager](https://mehraban.com.au/2017/08/16/using-azure-b2c-identity-manager-part-1/){:target="\_blank"}.
 
-## The Outcome
-
-I'd like to start here. A contrived example will help me get to an end goal that makes sense.
-As such, my purpose is to create a simple API that requires Authentication. I'd like my API consumer to be able to provide a username and password that's authenticated against AAD. AAD should then return a token and that token is passed to my API in the header (i.e. Bearer Authentication) and verifiable by my API. If the token in valid, allow the consumer to interact with my API otherwise, deny!
-
 ## Setting up an AAD Tenant
 
 Before we even get going, I need to ensure I have an AAD tenant that I can work against (wondering what this is? - Take a look at the aforementioned table ;) ).  
