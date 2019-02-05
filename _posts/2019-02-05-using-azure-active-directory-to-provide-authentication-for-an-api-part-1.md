@@ -139,3 +139,5 @@ This post is continued in Part 2 (...coming soon....)
 
 - If you're looking for specific developer tutorials, take a look at [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/index){:target="\_blank"}
 - A really simple tutorial on [setting up Postman to use Azure Active Directory](https://blog.jongallant.com/2017/03/azure-active-directory-access-tokens-postman/){:target="\_blank"}
+- Digitals Ocean's [Introduction to OAuth](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2){:target="\_blank"}
+- Yaser's post on [Using Azure B2C as your identity manager](https://mehraban.com.au/2017/08/16/using-azure-b2c-identity-manager-part-1/){:target="\_blank"}
