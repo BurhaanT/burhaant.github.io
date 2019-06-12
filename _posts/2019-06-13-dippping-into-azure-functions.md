@@ -103,9 +103,9 @@ After this, accessing configuration values is trivial.
 And that's it! 
 
 ### Useful resources
-- https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library
-- https://www.koskila.net/how-to-access-azure-function-apps-settings-from-c/
-- https://csharp.christiannagel.com/2016/08/02/netcoreconfiguration/
-- https://blog.jongallant.com/2018/01/azure-function-config/
+- <https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library>
+- <https://www.koskila.net/how-to-access-azure-function-apps-settings-from-c/>
+- <https://csharp.christiannagel.com/2016/08/02/netcoreconfiguration/>
+- <https://blog.jongallant.com/2018/01/azure-function-config/>
 
 
