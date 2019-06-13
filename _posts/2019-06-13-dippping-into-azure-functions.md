@@ -86,7 +86,7 @@ After this, accessing configuration values is trivial.
 
 6. Finally, construct a uri using this information and make the request, returning the result.
 ```
-        var weatherUrl = $"https://api.openweathermap.org/data/2.5/weather?city={city},{country}&appid={apiKey}";
+        var weatherUrl = $"https://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid={apiKey}";
 
         var client = new HttpClient();
         var response = await client.GetAsync(weatherUrl);
