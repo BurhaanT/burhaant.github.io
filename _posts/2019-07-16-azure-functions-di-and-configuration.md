@@ -152,4 +152,4 @@ public CheckPrice(IHttpClientFactory httpClientFactory, IConfiguration config)
 There we have it, we have an more robust and testable Azure Function. 
 
 ### Additional Resources
-- https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection
+- <https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection>
