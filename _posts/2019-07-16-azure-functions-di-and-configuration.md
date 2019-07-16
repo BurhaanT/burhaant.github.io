@@ -7,9 +7,6 @@ comments: true
 categories: [Azure]
 ---
 
-_Source code related to this post can be found [here](https://github.com/BurhaanT/Azure-Function-Share-Price-Checker)_
-
-
 In [my last post](/2019-06-13-dippping-into-azure-functions) I got going with a simple azure function that could be expanded on an used in just about any application.
 
 Naturally, as you explore the possibilities you run into a few things that you've been doing for ages in your day-to-day code and wonder how to approach these with Azure Functions. 
@@ -19,6 +16,8 @@ In this post, I want to address two such interests:
 
 # Overview
 The code in this post fetches some stock price data and returns some of that data for the given symbol.
+
+_Source code related to this post can be found [here](https://github.com/BurhaanT/Azure-Function-Share-Price-Checker)_
 
 ## Dependency Injection
 My [previous example](/2019-06-13-dippping-into-azure-functions) made a call to retrieve weather information by instantiating an HttpClient then making a call to a REST endpoint, returning the result.
