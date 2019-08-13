@@ -7,13 +7,13 @@ comments: true
 categories: [Azure]
 ---
 
-I've been creating applications for a long time and more often than not, there's been a requirements for some level of security.
+I've been creating applications for a long time and more often than not, there's been a requirement for some level of security.
 This ranges from data in transit to data at rest as well as relevant authorisation.
 In most cases, this functionality has been provided out the box and when it came to authentication, anything more than the implementation of a simple membership provider has been someone else's issue.
 
 I've done a bit of playing around with **Azure Active Directory (AAD)** but nothing significant enough for me to classify it as a skill. In other words, most of the time I'd be guessing...
 
-However, having a service that does the heavy lifting for me is alluring. When I start thinking about multifactor authentication, oAuth and oAuth Delegation, policies (and the list goes on), it just seems the AAD is an easier option. When you've been trying to get an application out the door as quickly as possible and with least amount of effort while maintaining it's integrity, easy (and battle tested) is good.
+However, having a service that does the heavy lifting for me is alluring. When I start thinking about multifactor authentication, oAuth and oAuth Delegation, policies (and the list goes on), it seems that AAD is an easier option. When you've been trying to get an application out the door as quickly as possible and with least amount of effort while maintaining it's integrity, easy (and battle tested) is good.
 
 So, on to it. Hopefully, my learnings can make your life a little easier and I can save you the effort of trawling through all the documents and videos out there to get you up and running as quickly as possible.
 
