@@ -128,7 +128,7 @@ Now, if you hit **SEND**, you should receive an access token back!
 
 ![Postman access token](/img/content/Postman-access-token.PNG)
 
-This post is continued in Part 2 (...coming soon....)
+This post is continued in [Part 2](/2019-08-14-using-azure-active-directory-to-provide-authentication-for-an-api-part-2/)
 
 ### Additional Resources
 
