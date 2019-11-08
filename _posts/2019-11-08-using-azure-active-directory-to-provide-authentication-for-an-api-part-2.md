@@ -7,6 +7,8 @@ comments: true
 categories: [Azure]
 ---
 
+> The source code for this post can be found over at [this GitHub repo](https://github.com/BurhaanT/spike-azure-active-directory).
+
 Progressing from [Part 1](/2019-02-05-using-azure-active-directory-to-provide-authentication-for-an-api-part-1), we're at the stage where we have a Azure Active Directory (AAD) tenant set up. 
 We can make calls to AAD using postman and receive an access token which we could now use to call the API.
 
