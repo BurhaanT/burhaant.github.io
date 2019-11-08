@@ -74,7 +74,7 @@ a) Create a GET request that makes a call to `{apiHost}/api/values`
 b) Under `Authorization` select `OAuth 2.0` as the Type
 c) Click on `Get New Access Token` and fill out the details as below
 
-``
+```
 Token Name: _whatever you like_
 Grant Type: `Authorization Code`
 Callback URL: `https://getpostman.com/oauth2/callback`
@@ -84,7 +84,7 @@ Client ID: `_{clientId}_`
 Client Secret: `_{clientSecret}_`
 Scope: `_{Application (client) ID}_/all`
 Client Authentication: `Send as Basic Auth header`
-``
+```
 
 Click *Request Token* then *Use Token* on the following dialog and you now have a bearer token that can be used to make a request to our API. 
 
