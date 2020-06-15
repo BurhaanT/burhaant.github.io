@@ -15,5 +15,36 @@ Using the example of titles - i.e. Mr, Mrs, Ms, Dr, Proff, etc....
 
 We can implement these as enumerated types in GraphQL as follows:
 
-**1. Create an enumrated type**
+**1. Create an enumerated type**
+```
+public enum Title
+{
+    Mr,
+    Mrs,
+    Ms,
+    Dr,
+    Proff
+} 
+```
+
+**2. Create an enum type that GraphQL understands based on the enum you've created**
+```
+public class TitleType: EnumerationGraphType<Title>
+{
+    public TitleType()
+    {
+        Name = nameof(Title);
+    }
+}
+```
+
+**3. Implement the type in your mutation**
+```
+.
+.
+.
+Field<TitleType>(nameof(TitleType));
+```
+
+Now only valid enumeration values will be accepted with an appropriate message indicating such to the user if the wrong value is supplied.
 
