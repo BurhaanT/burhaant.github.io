@@ -5,6 +5,10 @@ date: 2020-06-15 10:00
 author: burhaan
 comments: true
 categories: [GraphQL]
+image: 
+    path: /img/content/graphQL/graphQL.png
+    width: 1200
+    height: 630
 ---
 
 Mutations in GraphQL allow us to update data on our back-end. As with any other service, we want to ensure that any data we receive is in an expected and consistent format, constrained by rules we've implemented.
