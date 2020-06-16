@@ -5,6 +5,7 @@ date: 2020-06-05 10:00
 author: burhaan
 comments: true
 categories: [GraphQL]
+share-img: /img/content/graphQL/graphQL.png
 ---
 
 [_GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data_](https://en.wikipedia.org/wiki/GraphQL)
