@@ -4,7 +4,7 @@ title: What is Artificial Intelligence? Understanding AI in Practical Business T
 date: 2024-05-28 10:00
 author: burhaan
 comments: true
-categories: [AI]]
+categories: [AI]
 share-img: /img/content/AI/AI.webp
 ---
 
