@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Artificial Intelligence? Understanding AI in Practical Business Terms
-date: 2024-05-29 10:00
+date: 2024-05-28 10:00
 author: burhaan
 comments: true
 categories: [AI]
