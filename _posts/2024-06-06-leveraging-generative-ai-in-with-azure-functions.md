@@ -8,7 +8,7 @@ categories: [AI]
 share-img: /img/content/AI/AI.webp
 ---
 
-As .NET developers, we're always on the lookout for ways to enhance our applications, making them more efficient, intelligent, and user-friendly. One of the most exciting advancements in recent years is the rise of generative AI. By integrating generative AI into our .NET Core applications, we can add powerful features like natural language processing, content generation, and more. In this blog post, we'll explore the benefits of using generative AI and walk through a simple .NET Core 8 application that utilizes OpenAI's services via an Azure Function.
+As .NET developers, we're always on the lookout for ways to enhance our applications, making them more efficient, intelligent, and user-friendly. One of the most exciting advancements in recent years is the rise of generative AI. By integrating generative AI into our .NET Core applications, we can add powerful features like natural language processing, content generation, and more. In this blog post, we'll explore the benefits of using generative AI and walk through a simple .NET Core application that utilizes OpenAI's services via an Azure Function.
 
 ## Benefits of Generative AI for .NET Developers
 - Enhanced User Experience: Generative AI can provide more interactive and personalized experiences. For instance, chatbots powered by AI can offer more human-like interactions.
@@ -17,13 +17,13 @@ As .NET developers, we're always on the lookout for ways to enhance our applicat
 - Cost Efficiency: Automating repetitive tasks with AI reduces the need for human intervention, lowering operational costs.
 - Innovation: Integrating AI opens up new possibilities for innovative features and functionalities that can set your application apart.
 
-## Building a .NET Core 8 Application with OpenAI and Azure Functions
+## Building a .NET Core Application with OpenAI and Azure Functions
 
-Let's create a simple .NET Core 8 application that uses OpenAI to generate text based on user input via an Azure Function.
+Let's create a simple .NET Core application that uses OpenAI to generate text based on user input via an Azure Function.
 
 ### Step 1: Setting Up the Azure Function Project
 
-> Install .NET Core 8 SDK: Ensure you have the latest .NET Core 8 SDK installed. You can download it from the [official .NET website](https://dotnet.microsoft.com/download).
+> Install .NET Core SDK: Ensure you have the latest .NET Core SDK installed. You can download it from the [official .NET website](https://dotnet.microsoft.com/download).
 
 #### Create a New Azure Function Project:
 
@@ -167,4 +167,4 @@ Test the Endpoint: Use a tool like Postman to send a POST request to http://loca
 You should receive a generated text response from the OpenAI API.
 
 ### Conclusion
-By following these steps, you've created a simple .NET Core 8 application using Azure Functions that leverages the power of generative AI through OpenAI's API. This example demonstrates how easy it is to enhance your applications with AI capabilities, providing more value and functionality to your users. As you continue to explore generative AI, you'll discover even more ways to innovate and improve your .NET applications. Happy coding!
+By following these steps, you've created a simple .NET Core application using Azure Functions that leverages the power of generative AI through OpenAI's API. This example demonstrates how easy it is to enhance your applications with AI capabilities, providing more value and functionality to your users. As you continue to explore generative AI, you'll discover even more ways to innovate and improve your .NET applications. Happy coding!
