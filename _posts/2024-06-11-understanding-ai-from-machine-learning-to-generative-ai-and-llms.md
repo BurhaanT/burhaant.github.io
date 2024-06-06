@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding AI - From Machine Learning to Generative AI and LLMs
-date: 2024-06-06 10:00
+date: 2024-06-11 10:00
 author: burhaan
 comments: true
 categories: [AI]
