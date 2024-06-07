@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leveraging Generative AI in with Azure Functions
+title: Leveraging Generative AI with Azure Functions
 date: 2024-06-06 10:00
 author: burhaan
 comments: true
