@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with AI - First Steps and Considerations
-date: 2024-05-03 10:00
+date: 2024-06-03 10:00
 author: burhaan
 comments: true
 categories: [AI]
