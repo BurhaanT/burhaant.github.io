@@ -11,7 +11,7 @@ share-img: /img/content/AI/MetaGPT-new-log.png
 Multiagent AI frameworks provide for improved problem solving and the implementation of complex scenarios through the benefit of multiple perspectives. However this technology, while being a fantastic enabler, involves somewhat of a paradigm shift for traditional developers. What I mean is that as developers, while we consider business aplications from multiple perspectives, the actual build process is one dimensional. We write some code, probably get someone to check it and generally iterate on this process until we end up with something that delivers reasonable value (this is obviously a gross oversimplification). 
 When we think about multagent frameworks, there is the potential to abstract a lot of this repetition as the application building stage and there is a shift to considering solutions from a meta perspective - that is a solution to create solutions.
 
-I've already introduced multiagent frameworks, and if you've missed the post, you can [read it here](/2024-08-15-understanding-multiagent-ai-frameworks-implications-and-uses.md). 
+I've already introduced multiagent frameworks, and if you've missed the post, you can [read it here](/2024-08-15-understanding-multiagent-ai-frameworks-implications-and-uses). 
 
 ## Improved problem solving using diverse perspectives
 This approach mimics a human collaborative enviornment, where teams with varied expertise and viewpoints often ourperform individuals. Key aspects where this is highlighted are:
