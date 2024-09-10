@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A deeper dive into using multiagent AI frameworks
+title: A deeper dive into using Multiagent AI frameworks
 date: 2024-09-10 10:00
 author: burhaan
 comments: true
